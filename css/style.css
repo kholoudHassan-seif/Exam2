@@ -1,0 +1,106 @@
+#Home
+{
+   
+    position: relative;
+}
+#leftMenu
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 20px 8px 20px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    color: white;
+}
+
+.sidenav
+{
+    background-color: #414658;
+    border: solid black 10px;
+
+}
+
+
+#home-content {
+    position: fixed;
+    transition: margin-left 0.8s;
+    padding: 25px;
+    padding-top: 100px;
+    background-color: red;
+    width: 60px;
+    height:100%;
+    top: 0;
+}
+
+.sidenav a:hover{
+    color:  rgba(214, 46, 51 , 0.4);
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+#home-content h2
+{
+    font-size: 60px;
+}
+
+
+.social-list
+{
+    font-size: large;
+    color:white;
+    position: absolute;
+    bottom: 15px;
+}
+
+.postItem
+{
+   
+       
+        text-align: center;
+        border:10px solid wheat;
+        position: relative;
+        overflow: hidden ;
+}
+.caption
+{   
+    
+    background-color: rgba(15, 3, 95, 0.35);        
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s , transform 1s;
+}
+
+.postItem:hover .caption
+{
+    opacity: 1;
+    transform: rotate(360deg);
+}
+
+
+.caption h3,p
+{
+    color: aliceblue;
+}

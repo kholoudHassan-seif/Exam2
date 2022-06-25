@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        
+        <div class="searchInputs container m-auto">
+            <div class="row">
+                    <div class="col-md-6">
+                        <input class="form-control input-lg m-2 text-center" id="usernameInput" type="text" placeholder="search">
+                    </div>
+                    <div class="col-md-6">
+                        <input class="form-control input-lg m-2 text-center" id="usernameInput" type="text" placeholder="Enter Your Name">
+                    </div>
+            </div>
+        </div>
+        <section id="Home"> 
+            <div id="leftMenu" class="sidenav">
+                <a href="#" class="closebtn" >×</a>
+                <a href="#NowPlaying" class="NowPlaying">Now Playing</a>
+                <a href="#Popular" class="Popular">Popular</a>
+                <a href="#TopRated" class="TopRated">Top Rated</a>
+                <a href="#Trending" class="Trending">Trending</a>
+                <a href="#Upcoming" class="Upcoming">Upcoming</a>
+                <a href="#contact-us" class="#contact-us">Contact US</a>
+
+                <div class="social-list">
+                        
+                    <i class="fab fa-twitter fa-fw"></i>
+                    <i class="fab fa-facebook-f fa-fw"></i>
+                    <i class="fab fa-instagram fa-fw"></i>
+                    <i class="fab fa-dribbble fa-fw"></i>
+                    <i class="fab fa-pinterest fa-fw"></i>
+                </div>
+            </div>
+            <div id="home-content">
+                <span style="font-size:30px;cursor:pointer" class="openNav">☰</span>
+            </div> 
+        </section>
+
+        <!--movie section-->
+        <div  class="container mt-5 bg-info py-5 mb-5 ">
+            <div class="row" id="movieID">
+
+            </div>
+        </div>
+
+    <section id="contact-us" class="bg-warning py-4 ">
+        <div class="container ">
+            <div class="row -4">       
+                <h2>Contact Us</h2>        
+                <div class="col-md-6 ">             
+                                  
+                        <input class="form-control input-lg m-2 text-center" id="usernameInput" type="text" placeholder="Enter Your Name">
+                        <p id="usernameAlert" class="d-none text-danger">include at least 3 letters starting with capital, second name is optional</p>
+                        <input id="userPhoneInput" class="form-control input-lg m-2 text-center" type="number" placeholder="Enter Your Phone">
+                        <input id="userPasswordInput" class="form-control input-lg m-2 text-center" type="password" placeholder="Enter Password">
+                        <p id="userPasswordAlert" class="d-none text-danger m-0">you must strenth your password, from 5 to 15 characters</p>
+                        <a  id="Loginbtn" onclick="Submit()" class=" form-control mx-auto btn btn-info  w-25 mt-3 "  >Login</a> 
+  
+                </div>  
+                <div class="col-md-6">             
+                        <input  id="userEmailInput" class="form-control input-lg m-2 text-center" type="email" placeholder="Enter Email">
+                        <p id="userEmailAlert" class="d-none text-danger">name@example.com</p>
+                        <input id="userAgeLogin" class="form-control input-lg m-2 text-center" type="number" placeholder="Enter Age">
+                        <input  id="userRePassLogin" class="form-control input-lg m-2 text-center" type="password" placeholder="Enter RePassword">
+                        <p id="filldatamsg" class="text-danger d-none" >All inputs is required</p>
+                </div>       
+            </div>
+        </div>
+           
+    </section>
+
+         
+        <script src="js/jquery-3.6.0.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
